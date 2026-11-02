@@ -3,25 +3,25 @@
 Computational physicist. Ph.D. candidate at the Doctoral School of Physics, University of Bucharest,
 and research assistant at the Institute of Space Science (ISS — INFLPR subsidiary), Măgurele.
 
-I work on heavy-tailed statistics and stochastic models of complex systems, with published results
-on currency-market, space-weather and environmental records. The common thread is the distribution
-of waiting times, a dynamic fingerprint that lets otherwise unrelated systems be compared directly.
-I write the software the work needs, from GPU-portable Julia packages to streaming data pipelines,
-and keep it reproducible and public.
+My research focuses on heavy-tailed statistics and stochastic modeling in complex systems, with
+published work across currency-market, space-weather and environmental time series. I use
+waiting-time distributions as a non-parametric observable to characterize and compare dynamical
+regimes across disparate physical and empirical records. Methodologically, I develop open-source
+scientific software in Julia—primarily multi-vendor GPU kernels and streaming data pipelines.
 
-Current work: gravitational-wave signal analysis and deep-space telemetry simulation for the LISA
-collaboration; N-body star-cluster simulation campaigns on GPU clusters; statistical computation in
-encrypted regime for TRUSTEE (Horizon Europe); ELI-RO eTARGET. For three years I was a technological
-engineer at RATEN–CITON, doing probabilistic risk assessment for nuclear installations of national
-importance: atmospheric dispersion modelling, Monte Carlo radiation transport, and accident-frequency
-analysis under regulatory scrutiny.
+Current projects: gravitational-wave parameter estimation and deep-space telemetry simulation for
+the LISA collaboration; GPU-accelerated N-body star-cluster simulation campaigns; statistical
+computation in encrypted regime for TRUSTEE (Horizon Europe); ELI-RO eTARGET. Previously, I spent
+three years at RATEN–CITON conducting probabilistic safety assessments (PSA) for nuclear facilities,
+specializing in atmospheric dispersion modeling, Monte Carlo radiation transport, and
+accident-frequency quantification.
 
 Julia has been my primary language since 2018.
 
 ### Software
 
-Julia packages with test suites, continuous integration and documentation, the research packages
-also with citation metadata. All public, all in active development.
+Maintained Julia packages with test suites, continuous integration and documentation; research
+packages include citation metadata. All public and under active development.
 
 **Gravitational waves and LISA telemetry**
 
@@ -35,7 +35,7 @@ also with citation metadata. All public, all in active development.
 
 | | |
 |---|---|
-| [WaitingTimes.jl](https://github.com/PaulGoG/WaitingTimes.jl) | Exact waiting-time distributions of scalar time series over threshold grids, with verified fast kernels, GPU backends and provenance-tracked data products. The numerical backbone of the two complex-systems papers below. |
+| [WaitingTimes.jl](https://github.com/PaulGoG/WaitingTimes.jl) | Exact waiting-time distributions of scalar time series over threshold grids, with verified accelerated kernels, GPU backends and provenance-tracked data products; computational framework for the two complex-systems publications below. |
 | [MarketTickStreamer.jl](https://github.com/PaulGoG/MarketTickStreamer.jl) | Provider-agnostic tick-by-tick market data acquisition: live WebSocket streaming, historical REST backfill, vendor day-file import, an append-only raw layer, compaction to CSV or Arrow, and paced replay that returns the same channel type as the live source, so real-time methods can be developed offline. |
 
 **Stellar dynamics**
@@ -48,7 +48,7 @@ also with citation metadata. All public, all in active development.
 
 | | |
 |---|---|
-| [AtmosphericDispersion.jl](https://github.com/PaulGoG/AtmosphericDispersion.jl) | Gaussian-plume dispersion, depletion, deposition and resuspension of radioactive stack releases over Pasquill–Gifford stability classes and a wind rose, every parameterisation asserted against its published source. A rewrite of my 2021 B.Sc. code that documents the defects found in the original. |
+| [AtmosphericDispersion.jl](https://github.com/PaulGoG/AtmosphericDispersion.jl) | Gaussian-plume dispersion, depletion, deposition and resuspension of radioactive stack releases over Pasquill–Gifford stability classes and a wind rose, every parameterisation asserted against its published source. A refactored Julia implementation of my 2021 B.Sc. codebase with benchmarked numerical corrections. |
 | [DeterministicSequentialEmission.jl](https://github.com/PaulGoG/DeterministicSequentialEmission.jl) · [FissionFragmentsDomain.jl](https://github.com/PaulGoG/FissionFragmentsDomain.jl) | Prompt neutron emission from fission fragments, solved sequence by sequence from the energy balance of every split, and the fragmentation domain that prompt-emission and excitation-energy-partition models share. |
 | [FissionTemperatureRatio.jl](https://github.com/PaulGoG/FissionTemperatureRatio.jl) · [ExforFissionData.jl](https://github.com/PaulGoG/ExforFissionData.jl) | The temperature-ratio extraction of the EPJ A paper below, from measured prompt neutron multiplicity with no emission model entering, and provenance-tracked retrieval of fission observables from the IAEA EXFOR archive. |
 
