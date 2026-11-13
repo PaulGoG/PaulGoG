@@ -16,8 +16,6 @@ three years at RATEN–CITON conducting probabilistic safety assessments (PSA) f
 specializing in atmospheric dispersion modeling, Monte Carlo radiation transport, and
 accident-frequency quantification.
 
-Julia has been my primary language since 2018.
-
 ### Software
 
 Maintained Julia packages with test suites, continuous integration and documentation; research
