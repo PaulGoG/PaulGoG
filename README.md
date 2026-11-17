@@ -18,15 +18,15 @@ accident-frequency quantification.
 
 ### Software
 
-Maintained Julia packages with test suites, continuous integration and documentation; research
-packages include citation metadata. All public and under active development.
+Mostly Julia packages, each with a test suite and continuous integration; the research packages
+also carry citation metadata. Several are feature-complete and in maintenance mode.
 
 **Gravitational waves and LISA telemetry**
 
 | | |
 |---|---|
-| [CurvatureDistinguishability.jl](https://github.com/PaulGoG/CurvatureDistinguishability.jl) | Quartic distinguishability law for space-based gravitational-wave interferometry: the squared noise-weighted distance between a two-source signal and its best single-source template grows as the fourth power of the parameter separation, with the extrinsic curvature of the waveform manifold as coefficient; confusion-zone maps in parameter space. GPU kernels portable across CUDA, ROCm, oneAPI and Metal from a single source. Computational basis of the manuscript under revision at *Classical and Quantum Gravity*. |
-| [StreamingInference.jl](https://github.com/PaulGoG/StreamingInference.jl) · [MilliHertzBase.jl](https://github.com/PaulGoG/MilliHertzBase.jl) · [MilliHertzQML.jl](https://github.com/PaulGoG/MilliHertzQML.jl) | Three layers for LISA telemetry. StreamingInference.jl: windowed analysis of time series delivered in batches, late, out of order and with gaps (scheduling, conditioning, an estimator interface, evaluation). MilliHertzBase.jl, the gravitational-wave layer: noise models, IMRPhenomA waveforms, detector response, LISA Data Challenge products. MilliHertzQML.jl: a variational quantum classifier with data re-uploading for massive black hole binary coalescences, scored window by window on LDC Sangria data, both on the completed record and on a replay streamed through a simulated downlink, and evaluated against classical controls on the same features; a Julia port and operational extension of the method of Isfan et al., *Class. Quantum Grav.* **42**, 225001 (2025). |
+| [CurvatureDistinguishability.jl](https://github.com/PaulGoG/CurvatureDistinguishability.jl) | Quartic distinguishability law for space-based gravitational-wave interferometry: the squared noise-weighted distance between a two-source signal and its best single-source template grows as the fourth power of the parameter separation, with the extrinsic curvature of the waveform manifold as coefficient; confusion-zone maps in parameter space. Double-precision GPU kernels from a single source for CUDA, ROCm and oneAPI. Computational basis of the manuscript under revision at *Classical and Quantum Gravity*. |
+| [StreamingInference.jl](https://github.com/PaulGoG/StreamingInference.jl) · [MilliHertzBase.jl](https://github.com/PaulGoG/MilliHertzBase.jl) · [MilliHertzQML.jl](https://github.com/PaulGoG/MilliHertzQML.jl) | Three layers for LISA telemetry. StreamingInference.jl: windowed analysis of time series delivered in batches, late, out of order and with gaps (scheduling, conditioning, an estimator interface, evaluation). MilliHertzBase.jl, the gravitational-wave layer: noise models, IMRPhenomA waveforms, detector response, LISA Data Challenge products. MilliHertzQML.jl: a variational quantum classifier with data re-uploading for massive black hole binary coalescences, scored window by window on LDC Sangria data, both on the completed record and on a replay streamed through a simulated downlink, and evaluated against classical controls on the same features; a Julia port and operational extension of the method of Isfan et al., *Class. Quantum Grav.* **42**, 225001 (2025), [doi:10.1088/1361-6382/ae1787](https://doi.org/10.1088/1361-6382/ae1787). |
 | [DeepSpaceTelemetry.jl](https://github.com/PaulGoG/DeepSpaceTelemetry.jl) | Discrete-event simulator of deep-space mission telemetry: duty-cycled contact windows, a Gilbert–Elliott channel, FIFO live and LIFO archive routing, alert-latency metrology. Mission-agnostic core, LISA as the shipped scenario. |
 
 **Complex systems and time series**
@@ -56,7 +56,7 @@ packages include citation metadata. All public and under active development.
 |---|---|
 | [scicomp-toolbox](https://github.com/PaulGoG/scicomp-toolbox) | Scientific scripting workbench: cross-vendor accelerator and host-processor diagnostics through one KernelAbstractions kernel, their figures, and workspace utilities behind one dispatcher, test runner and formatting gate. |
 | [SshDataBridge.jl](https://github.com/PaulGoG/SshDataBridge.jl) · [SshAutoLogin.jl](https://github.com/PaulGoG/SshAutoLogin.jl) | Deployment of simulation codes to several compute nodes and harvesting of their results over SSH and rsync, and multi-session terminal login. Credentials never reach an argument vector, an environment or `ps`. |
-| [UniBuc-Computational-Physics-Coursework](https://github.com/PaulGoG/UniBuc-Computational-Physics-Coursework) | Six years of physics coursework translated from C, C++ and Octave into Julia, published together with a line-level defect census of the original student code. |
+| [UniBuc-Computational-Physics-Coursework](https://github.com/PaulGoG/UniBuc-Computational-Physics-Coursework) | Six years of physics coursework rewritten in Julia from the original C, C++, Octave and Julia, published together with a line-level defect census of the original student code. |
 
 ### Publications
 
