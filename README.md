@@ -6,8 +6,8 @@ and research assistant at the Institute of Space Science (ISS, a subsidiary of I
 I work on heavy-tailed statistics and stochastic modeling of complex systems, with published work
 on currency-market, space-weather and environmental time series. I use the waiting-time
 distribution as a non-parametric observable to compare dynamical regimes in records as different as
-sea-level series and currency trades. I write the software the work needs as open-source Julia,
-mostly vendor-portable GPU kernels and streaming data pipelines.
+sea-level series and currency trades. I develop open-source scientific software in Julia, mostly
+vendor-portable GPU kernels and streaming data pipelines.
 
 Current projects: gravitational-wave parameter estimation and deep-space telemetry simulation for
 the LISA collaboration; GPU-accelerated N-body star-cluster simulation campaigns; statistical
